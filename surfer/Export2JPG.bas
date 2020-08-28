@@ -1,24 +1,24 @@
 Sub Main
-'#功能：将已有srf格式文件批量导出为图片
+'#���ܣ�������srf��ʽ�ļ���������ΪͼƬ
 Dim SurferApp As Object
 Set SurferApp = CreateObject("Surfer.Application")
 SurferApp.Visible = True
 
 
-'#需要修改的部分
+'#��Ҫ�޸ĵĲ���
 
-SRFPATH="D:\LLXM\海螺广场\DAPC\DAP\yt\"   '设置srf文件所在文件夹
-SAVEPATH="D:\LLXM\海螺广场\风振云图\"    '设置导出图片所在文件夹
+SRFPATH="D:\LLXM\���ݹ㳡\DAPC\DAP\yt_fz\"   '����srf�ļ������ļ���
+SAVEPATH="D:\LLXM\���ݹ㳡\������ͼ2\"    '���õ���ͼƬ�����ļ���
 
-s=0      '起始角度
-e=0      '终止角度
-sp=10   '间隔
+s=0      '��ʼ�Ƕ�
+e=350   '��ֹ�Ƕ�
+sp=10   '���
 
-CWidth=730    '设置图片宽度
-CHeight=752   '设置图片高度
+CWidth=733    '����ͼƬ����
+CHeight=752   '����ͼƬ�߶�
 '#
 
-'#无需修改#
+'#�����޸�#
 For i = s To e Step sp
 
 	If i < 10 Then
